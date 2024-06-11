@@ -1,0 +1,10 @@
+﻿<Window x:Class="Weather_task.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Weather App" Height="200" Width="300">
+    <Grid Margin="10">
+        <ComboBox ItemsSource="{Binding Cities}" SelectedItem="{Binding SelectedCity}" Margin="0,0,0,10" />
+        <TextBlock Text="{Binding WeatherInfo.Temperature, StringFormat='Температура: {0}°C'}" Margin="0,40,0,10" FontSize="16" />
+        <TextBlock Text="{Binding WeatherInfo.Description, StringFormat='Описание: {0}'}" Margin="0,70,0,10" FontSize="16" />
+    </Grid>
+</Window>
