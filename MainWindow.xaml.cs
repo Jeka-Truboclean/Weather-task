@@ -32,7 +32,6 @@ namespace Weather_task
     {
         public WeatherInfo GetWeather(string city)
         {
-            // Для демонстрации используем фиктивные данные
             var random = new Random();
             return new WeatherInfo
             {
