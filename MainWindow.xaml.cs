@@ -37,7 +37,7 @@ namespace Weather_task
             {
                 City = city,
                 Temperature = random.Next(-10, 30),
-                Description = "Ясно"
+                Description = "Clear"
             };
         }
     }
